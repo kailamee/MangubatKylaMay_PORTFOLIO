@@ -43,7 +43,7 @@ body.dark-mode {
 }
 
 .navbar ul li a:hover,
-.navbar ul li a.active {
+.navbar ul li a:focus-visible {
   background: #fff;
   color: #2575fc;
 }

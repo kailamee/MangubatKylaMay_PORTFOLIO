@@ -3,28 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kyla May S. Mangubat | Portfolio</title>
+  <title>Contact Me | Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <!-- Dark Mode Button -->
+  <button id="darkModeToggle" class="dark-mode-toggle" onclick="toggleDarkMode()">Dark Mode</button>
+
   <nav class="navbar">
     <ul>
-      <li><a href="home.html" class="active">Home</a></li>
+      <li><a href="home.html">Home</a></li>
       <li><a href="aboutme.html">About Me</a></li>
       <li><a href="portfolio.html">Portfolio</a></li>
       <li><a href="services.html">Services</a></li>
-      <li><a href="contactme.html">Contact</a></li>
+      <li><a href="contactme.html" class="active">Contact</a></li>
     </ul>
   </nav>
 
-<button id="darkModeToggle" class="dark-mode-toggle" onclick="toggleDarkMode()">Dark Mode</button>
+  <section class="content">
+    <h1>Contact Me</h1>
+    <p>You can reach me at: <strong>mangubatkyla@gmail.com</strong></p>
 
-  <section class="hero">
-    <img src="Original Picture.jpg" alt="Profile Picture" class="profile-pic">
-    <h1 class="name">Kyla May S. Mangubat</h1>
-    <h2 class="school">Cebu Technological University – Main Campus</h2>
-    <h3 class="tagline">Bachelor of Science in Information Technology | 2nd Year</h3>
+    <form class="contact-form">
+      <input type="text" name="name" placeholder="Enter your name">
+      <input type="email" name="email" placeholder="Enter your email">
+      <input type="text" name="subject" placeholder="Enter subject">
+      <textarea name="message" placeholder="Enter your message"></textarea>
+      <button type="submit">Send</button>
+    </form>
   </section>
 
   <script>
@@ -47,8 +54,7 @@
       toggleButton.textContent = 'Dark Mode';
     }
   }
-</script>
-
+  </script>
 
 </body>
 </html>

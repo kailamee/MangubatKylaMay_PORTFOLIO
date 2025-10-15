@@ -3,28 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kyla May S. Mangubat | Portfolio</title>
+  <title>Portfolio | Kyla May S. Mangubat</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <nav class="navbar">
     <ul>
-      <li><a href="home.html" class="active">Home</a></li>
+      <li><a href="home.html">Home</a></li>
       <li><a href="aboutme.html">About Me</a></li>
-      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="portfolio.html" class="active">Portfolio</a></li>
       <li><a href="services.html">Services</a></li>
       <li><a href="contactme.html">Contact</a></li>
     </ul>
   </nav>
 
-<button id="darkModeToggle" class="dark-mode-toggle" onclick="toggleDarkMode()">Dark Mode</button>
+  <button id="darkModeToggle" class="dark-mode-toggle" onclick="toggleDarkMode()">Dark Mode</button>
 
-  <section class="hero">
-    <img src="Original Picture.jpg" alt="Profile Picture" class="profile-pic">
-    <h1 class="name">Kyla May S. Mangubat</h1>
-    <h2 class="school">Cebu Technological University – Main Campus</h2>
-    <h3 class="tagline">Bachelor of Science in Information Technology | 2nd Year</h3>
+  <section class="content">
+    <h1>My Portfolio</h1>
+    <p>Here is one of my projects and works:</p>
+
+    <div class="portfolio-grid">
+      <div class="portfolio-item">
+        <img src="argawanon.png" alt="Dormitory Management System" style="width:100%; border-radius:10px;">
+        <h3>Dormitory Management System</h3>
+        <p>A role-based system with tenant, caretaker, and admin dashboards, billing, and room management features.</p>
+      </div>
+    </div>
   </section>
 
   <script>
@@ -47,8 +53,7 @@
       toggleButton.textContent = 'Dark Mode';
     }
   }
-</script>
-
+  </script>
 
 </body>
 </html>

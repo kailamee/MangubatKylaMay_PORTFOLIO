@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="aboutme.html" class="active">About Me</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contactme.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <button id="darkModeToggle" class="dark-mode-toggle" onclick="toggleDarkMode()">Dark Mode</button>
+
+  <section class="content">
+    <h1>About Me</h1>
+    <p>
+      Hi! I’m <strong>Kyla May S. Mangubat</strong>, a 2nd year 
+      <strong>BS Information Technology (BSIT)</strong> student at 
+      <strong>Cebu Technological University – Main Campus</strong>.<br>
+      I am passionate about learning, technology, and creativity, always striving to improve myself and my skills.
+    </p>
+
+    <h2>Academic Background</h2>
+    <p>
+      Currently in my second year of BSIT, I’ve gained knowledge and hands-on experience 
+      in programming, system design, and digital tools.<br>
+      My coursework and projects have strengthened both my technical and creative abilities.
+    </p>
+
+    <h2>Technical Skills</h2>
+    <p>
+      Programming: C, Java<br>
+      Database Management: MySQL<br>
+      Web Development: HTML, CSS<br>
+      Digital Tools: Adobe Photoshop, Illustrator, After Effects
+    </p>
+
+    <h2>Strengths</h2>
+    <p>
+      Problem-Solving<br>
+      Creativity in Design<br>
+      Teamwork & Leadership<br>
+      Adaptability & Willingness to Learn
+    </p>
+
+    <h2>Hobbies & Interests</h2>
+    <p>
+      Exploring digital design, creating visual projects, collaborating with others, and learning new tools.
+    </p>
+
+    <h2>My Goal</h2>
+    <p>
+      To become a skilled IT professional, combining technical expertise and creative design to build innovative solutions.
+    </p>
+
+    <h2>Birthday</h2>
+    <p>March 04, 2026</p>
+  </section>
+
+  <script>
+  const toggleButton = document.getElementById('darkModeToggle');
+
+  if(localStorage.getItem('darkMode') === 'enabled') {
+    document.body.classList.add('dark-mode');
+    toggleButton.textContent = 'Light Mode';
+  } else {
+    toggleButton.textContent = 'Dark Mode';
+  }
+
+  function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+    if(document.body.classList.contains('dark-mode')){
+      localStorage.setItem('darkMode', 'enabled');
+      toggleButton.textContent = 'Light Mode';
+    } else {
+      localStorage.setItem('darkMode', 'disabled');
+      toggleButton.textContent = 'Dark Mode';
+    }
+  }
+  </script>
+
+</body>
+</html>
